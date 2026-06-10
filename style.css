@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7f2;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.formulario{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.formulario h2{
+    margin-bottom:15px;
+}
+
+.formulario input,
+.formulario select{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.formulario button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px;
+    width:100%;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.formulario button:hover{
+    background:#1b5e20;
+}
+
+.resumo{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.receita{
+    background:#43a047;
+}
+
+.despesa{
+    background:#e53935;
+}
+
+.lucro{
+    background:#1565c0;
+}
+
+.lista{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+th{
+    background:#2e7d32;
+    color:white;
+}
+
+.dicas{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.dicas ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.dicas li{
+    margin-bottom:10px;
+}

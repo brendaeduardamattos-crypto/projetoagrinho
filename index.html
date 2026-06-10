@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroGestor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 AgroGestor</h1>
+        <p>Controle Financeiro Rural</p>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+            <h2>Adicionar Registro</h2>
+
+            <input type="text" id="descricao" placeholder="Descrição">
+
+            <input type="number" id="valor" placeholder="Valor">
+
+            <select id="tipo">
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+            </select>
+
+            <button onclick="adicionarRegistro()">
+                Salvar
+            </button>
+        </section>
+
+        <section class="resumo">
+            <div class="card receita">
+                <h3>Receitas</h3>
+                <p id="totalReceitas">R$ 0,00</p>
+            </div>
+
+            <div class="card despesa">
+                <h3>Despesas</h3>
+                <p id="totalDespesas">R$ 0,00</p>
+            </div>
+
+            <div class="card lucro">
+                <h3>Lucro</h3>
+                <p id="lucroTotal">R$ 0,00</p>
+            </div>
+        </section>
+
+        <section class="lista">
+            <h2>Movimentações</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelaRegistros"></tbody>
+            </table>
+        </section>
+
+        <section class="dicas">
+            <h2>💡 Dicas para aumentar o lucro</h2>
+
+            <ul>
+                <li>Monitore os custos por hectare.</li>
+                <li>Evite desperdício de fertilizantes.</li>
+                <li>Planeje compras fora da alta temporada.</li>
+                <li>Faça manutenção preventiva dos equipamentos.</li>
+                <li>Acompanhe a produtividade de cada safra.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
